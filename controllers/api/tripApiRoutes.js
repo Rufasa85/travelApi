@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {Trip} = require('../models');
+const {Trip} = require('../../models');
 
 router.post("/",(req,res)=>{
     Trip.create({

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {Location,Trip} = require('../models');
+const {Location,Trip} = require('../../models');
 
 router.get("/",(req,res)=>{
     Location.findAll().then(locData=>{
